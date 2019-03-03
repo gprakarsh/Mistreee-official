@@ -1,0 +1,35 @@
+@import '../../../../variables';
+
+.appointments{
+    padding: 5vh 10vw;
+    background-color: #ececec;
+    min-height: 88vh;
+    height:auto;
+    display:flex;
+    .app{
+        border:solid 0.1px black;
+        font-size:30px;
+        border-radius: 1vh;
+        padding: 2vh 2vw;
+        background: white;
+        box-shadow: 0.2px 0.2px 0.2px 0.2px grey;
+        margin:2vh 1vw;
+        width:37vw;
+        height: 28vh;
+        text-align: left;
+    }
+}
+
+@media(max-width:740px){
+    .appointments{
+        width:100vw !important;
+        display: flex !important;
+        flex-wrap:nowrap !important;
+        flex-direction: column !important;
+        .app{
+            font-size:18px;
+            height:16.5vh;
+            width:auto !important;
+        }
+    }
+}

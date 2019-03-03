@@ -1,0 +1,51 @@
+@import '../../../../../variables';
+
+.reason{
+    background: #ececec;
+    height:auto;
+    padding: 20vh 23.2vw;
+    padding-top:10vh;
+    text-align: left;
+    h1{
+        font-size:40px;
+        text-align:center;
+        margin-bottom: 5vh;
+    }
+    p{
+        font-size:25px;
+        background: white;
+        border:solid black 0.1px;
+        padding:1vh 1vw;
+        height: 50vh;
+        word-wrap: break-word;
+    }
+    button{
+        @include buttonReset;
+        font-size: 18px;
+        margin-top:2vh;
+        margin-right:1vw;
+        background-color:$highlight2;
+        height: 5vh;
+        width: 8vw;
+        text-align:center;
+        color:white;
+        font-weight: 600;
+        transition: background-color 0.2s linear
+    }
+    button:hover{
+        background-color: $highlight3;
+    }
+    #back{
+        background-color:$highlight;
+    }
+    #back:hover{
+        background-color: black;
+    }
+    @media(max-width:740px){
+        padding: 20vh 5vw;
+        padding-top:10vh;
+        button{
+            width:28vw;
+        }
+    }
+}

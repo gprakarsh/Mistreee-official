@@ -1,0 +1,87 @@
+@import './../../../variables';
+
+#cross{
+    position:absolute;
+    right:17vw;
+    top:15vh;
+    color:black;
+    font-size:30px;
+}
+.Register{
+    display:flex;
+    justify-content: space-around;
+    padding:20vh 10vw;
+    text-align:left;
+    font-size:55px;   
+    
+     #repair{
+        margin-top:5vh;
+        display: flex;
+        flex-direction: column;
+        transition: 0.2s color linear;
+        border-bottom:black solid 2px;
+        i{
+            margin-bottom:4vh;
+        }
+    }
+    #service{
+        display: flex;
+        flex-direction: column;
+        margin-top:5vh;
+        grid-column:2/span 1;
+        grid-row:1/span 1;
+        color:black;
+        transition: 0.2s color linear;
+        width:auto;
+        border-bottom:black solid 2px;
+        i{
+            margin-bottom:4vh;
+        }
+    }
+    button{
+        @include buttonReset;
+        color: black;
+        transition: 0.2s color linear;
+        transition: 0.2s border-bottom linear;
+        i{
+          transition: 0.2s margin-left linear;          
+        }
+    }
+    #repair:hover{
+        color:$highlight;
+        border-bottom: $highlight solid 2px;
+        button{
+            color:$highlight;
+            i{
+                margin-left:0.5vw;
+            }
+        }
+                
+    }
+    #service:hover{
+        color:$highlight;
+        border-bottom: $highlight solid 2px;
+        button{
+            color:$highlight;
+            i{
+                margin-left:0.5vw;
+            }
+        }
+    }    
+}
+
+
+@media(max-width:740px){
+    .Register{
+    padding:10vh 0 !important;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20vh;
+    font-size:30px;
+    #repair{
+        margin-bottom:5vh;
+    }
+    }
+}

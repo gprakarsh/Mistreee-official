@@ -1,0 +1,126 @@
+@import '../../../../variables';
+
+.apps{
+    padding: 5vh 10vw;
+    background-color: #ececec;
+    min-height: 88vh;
+    height:auto;
+    .app{
+        font-size:18px;
+        border:solid 0.1px black;
+        border-radius: 1vh;
+        padding: 2vh 2vw;
+        background: white;
+        box-shadow: 0.2px 0.2px 0.2px 0.2px grey;
+        margin:2vh 1vw;
+        width:37vw;
+        display: grid;
+        grid-template-rows: 1fr,1fr,1fr;
+        grid-template-columns: 1fr,1fr,1fr;
+        img{
+            background-color: #ececec;
+            grid-column:1/span 1;
+            grid-row:1/span 1; 
+            height:13vh;
+            width:auto;
+            border-radius:5vh;
+            margin-right:2vw;
+
+        }
+        #details{
+            grid-column: 2/span 2;
+            grid-row:1/span 1;
+            text-align: left;
+            p{
+                word-wrap: break-word;
+            }
+            button{
+                @include buttonReset;
+                font-size: 18px;
+                margin-top:2vh;
+                margin-bottom:2vh;
+                margin-right:1vw;
+                background-color:$highlight;
+                height: 5vh;
+                width: 7vw;
+                text-align:center;
+                color:white;
+                font-weight: 600;
+                transition: background-color 0.2s linear
+            }
+            button:hover{
+                background-color: black;
+            }
+        }
+        #items{
+            grid-column:2/span 2;
+            display: flex;
+            align-items: left;
+            
+        }
+        #canfix{
+            grid-column: 1/span 1;
+            text-align: right;
+            margin-right:1vw;
+        }
+        #buttons{
+            grid-column: 2/span 2;
+            display: flex;
+            button{
+                @include buttonReset;
+                font-size: 18px;
+                margin-top:2vh;
+                margin-right:1vw;
+                background-color:$highlight2;
+                height: 5vh;
+                width: 7vw;
+                text-align:center;
+                color:white;
+                font-weight: 600;
+                transition: background-color 0.2s linear
+            }
+            button:hover{
+                background-color: $highlight3;
+            }
+        }
+    }
+    img{
+        height:20vh;
+        width:20vh;
+        border-radius:10vh;
+        text-align:left;
+        margin-right: 4vw;
+    }
+    #mapper{
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+    @media(max-width:740px){
+        padding: 5vh 10vw;
+        .app{
+            width:70vw;
+            font-size:15px;
+            img{
+                height:8vh;
+            }
+            #details{
+                button{
+                    width:30vw;
+                }
+            }
+            #buttons{
+                grid-column:1/span 3;
+                display: flex;
+                justify-content: center;
+                button{
+                    width:32vw;
+                    
+                }
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+@import url('https://fonts.googleapis.com/css?family=Hind|Montserrat');
+
+$highlight:#276EF1;
+$highlight2:#35A2A8;
+$highlight3:#0C6C71;
+$font:'Maven Pro';
+$logo: 'Montserrat';
+
+@mixin buttonReset{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+    font: inherit;
+	cursor: pointer;
+    outline: inherit;
+    text-align: center;
+}
+
+@mixin secondNav{
+    height:40% ;
+    
+	ul{
+        height: 100%;
+        background: $highlight;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        padding: 1vh 15vw;
+        @media(min-width:740px){
+            font-size:30px;
+        }
+        li{
+        margin-right:3vw;
+        color:white;
+        transition: color 0.2s linear;
+        }
+        a{
+            text-decoration: none;
+        }
+        li:hover{
+            color:black;
+        }
+    }
+    
+}
+
+// import

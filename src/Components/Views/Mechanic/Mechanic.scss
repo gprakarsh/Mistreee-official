@@ -1,0 +1,176 @@
+@import './../../../variables';
+
+
+.user-view{
+    background-color: #ececec;
+    min-height: 91vh;
+    width: 100vw;
+    height:auto;
+    text-align: center;
+    padding: 5vh 10vw;
+    display:flex;
+    flex-direction: column;
+    
+    .buttons{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        button{
+            text-align: center;
+        }
+    }
+    .app{
+        display: flex;
+        justify-content: center;
+        border:solid 0.1px black;
+        border-radius: 1vh;
+        padding: 2vh 2vw;
+        background: white;
+        box-shadow: 0.2px 0.2px 0.2px 0.2px grey;
+        margin:2vh 1vw;
+        width:auto;
+        font-size:20px;
+        p{
+            width:auto;
+        }
+    }
+    img{
+        height:20vh;
+        width:auto;
+        border-radius:30px;
+        text-align:left;
+        margin-right: 4vw;
+        background: #ececec;
+    }
+    h1{
+        text-align:center;
+        font-size:60px;
+        margin:4vh 0;  
+    }
+    #message{
+        margin-bottom: 4vh;
+        font-size:25px;
+        text-align:center;
+        color:$highlight;
+        font-weight: 600;
+    }
+    p{
+        text-align: left;
+    }
+    button{
+        @include buttonReset;
+        padding:0 2vw;
+        font-size: 18px;
+        margin-top:4vh;
+        margin-right:1vw;
+        background-color:$highlight2;
+        height: 7vh;
+        width: 13vw;
+        text-align:center;
+        color:white;
+        font-weight: 600;
+        transition: background-color 0.2s linear
+    }
+    button:hover{
+        background-color: black;
+    }
+    span{
+        color:red;
+        font-size:10px;
+        position: relative;
+        bottom:2vh;
+    }
+    @media(max-width:740px){
+        padding: 5vh 5vw !important;
+    }
+}
+
+.edit-view{
+    font-family: $font;
+    padding: 5vh 30vw;
+    text-align:left;
+    display: flex;
+    flex-direction: column;
+    .files{
+        display: flex;
+    }
+    img{
+        height:10vh;
+        width:10vh;
+        margin-left:2vw;
+    }
+    
+    p,span{
+        font-size:20px;
+        margin-bottom:1vh;
+    }
+    input,textarea{
+        border: 0.5px solid rgba(0,0,0,0.4);
+        margin-bottom:2vh;
+        padding: 1vh 1vw;
+        font-size:20px;
+        color:black;
+        font-weight:100;
+        transition: border 0.4s linear;
+    }
+    input:focus,textarea:focus{
+        outline:none;
+        border: 0.5px solid $highlight;
+    }.mechButtons{
+        @include buttonReset;
+        font-size: 18px;
+        margin-top:4vh;
+        margin-right:1vw;
+        padding:1vh 1vw !important;
+        background-color:$highlight2;
+        height: 7vh;
+        width: auto !important;
+        text-align:left;
+        color:white;
+        font-weight: 600;
+        transition: background-color 0.2s linear;
+        position: relative;
+        bottom:20vh;
+    }
+    button:hover{
+        background-color: black;
+    }
+    span{
+        color:red;
+    }
+    #buttons{
+        display:flex;
+        text-align: center;
+    }
+    #fileCollector{
+        width:20vw;
+    }
+    @media(max-width: 740px){
+        padding: 5vh 5vw;
+        #fileCollector{
+            width:auto;
+        }
+    }
+}
+
+@media(max-width:740px){
+    .user-view{
+        display: flex;
+        align-items:center;
+        button{
+            padding: 1vh 1vw !important;
+        }
+        .app{
+            width:auto !important;
+            img{
+                height: 8vh !important;
+            }
+        }
+    }
+}
+
+@media(max-width:740px){
+    .user-view{
+        padding: 5vh 10vw;
+    }
+}

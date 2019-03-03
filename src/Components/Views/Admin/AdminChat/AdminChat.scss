@@ -1,0 +1,101 @@
+@import './../../../../variables';
+
+.AdminChat{
+    border:solid .1px black;
+    height:85vh;
+    margin:0;
+    display: flex;
+    flex-wrap: wrap;
+    font-size:24px;
+    .navAndConvo{
+        width:100%;
+        height:90%;
+        display: flex;
+        justify-content: flex-start;
+        
+        nav{
+            background-color: black;
+            padding:3vh 1vw;
+            height:100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            color:white;
+            border:solid black 0.1px;
+            width:20%;
+            ul{
+                width:100%;
+                li{
+                    padding:3% 1%;
+                    border-top: none;
+                    text-align: center;
+                    margin: 1vh 0;
+                }
+                .userNameHighlight{
+                    font-weight: 600;
+                }
+            }
+            @media(max-width:740px){
+                width:40%
+            }            
+        }
+        
+        .currentConversation{
+            height:100%;
+            width:80%;
+            padding:1vh 1vw;
+            overflow-y: scroll;
+            // background: red;
+                        
+            #left{
+                width:100%;
+                padding:0.3vw; 
+                display: flex;
+                justify-content: flex-start;
+                color:black;
+                p{
+                    color:black;
+                    padding:0.8vh 1vw;
+                    background: #E9EBEE;
+                    border-radius:8px;
+                    max-width:50%;   
+                    word-wrap: break-word;           
+                }
+        
+            }
+            #right{
+                margin:0;
+                width:100%;
+                padding:0.5vh 1vw; 
+                display: flex;
+                justify-content: flex-end;
+                color:white;
+                p{
+                    padding:0.8vh 1vw;
+                    background: $highlight;
+                    border-radius:8px;
+                    box-shadow: 0.2px 0.2px 0.2px 0.2px $highlight;  
+                    max-width:50%;   
+                    word-wrap: break-word;           
+                }                       
+            }
+            @media(max-width:740px){
+                width:60%
+            }
+        }
+        
+    }
+
+    #adminMessage{
+          height:10%;
+          width:100%;
+          padding: 0 3vw;
+          background-color: $highlight;
+          color:white;
+          border: none;
+    }
+    #adminMessage::placeholder{
+        color:white;
+    }
+}

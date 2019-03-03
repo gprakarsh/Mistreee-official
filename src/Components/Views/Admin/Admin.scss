@@ -1,0 +1,63 @@
+@import './../../../variables';
+
+.adminDash{
+    margin:0;
+    height:100vh;
+    background-color: #ececec;
+    padding:7vh 7vw;
+    h1{
+        text-align:center;
+        font-size:60px;
+        margin:4vh 0;  
+    }
+    #message{
+        margin-bottom: 4vh;
+        font-size:25px;
+        text-align:center;
+        color:$highlight;
+        font-weight: 600;
+    }
+    #donut,#line{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border:solid black 0.2px;
+        border-radius:1vh;
+        box-shadow: 0.2px 0.2px 0.2px 0.2px grey;
+        width:30vw;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        background: white;
+        margin:2vh 1vw;
+    }
+    #line{
+        width:50vw;
+        height: auto;
+    }
+    .charts{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    @media(max-width:740px){
+        padding:none;
+        h1{
+            font-size: 40px;
+        }
+        #message{
+            font-size:25px;
+        }
+        .charts{
+            display: flex;
+            flex-direction: column;   
+            justify-content: center;
+            #donut{
+                width:80vw;
+            }
+            #line{
+                width:80vw;
+            }         
+        }
+    }
+}

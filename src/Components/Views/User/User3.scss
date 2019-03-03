@@ -1,0 +1,65 @@
+@import './../../../variables';
+.user3{
+    #info{
+        .map{
+            position: absolute;
+            right:18vh;
+        }
+        #text{
+            width:60%;
+        }
+    }
+    h1{
+        font-size:40px;
+        font-weight: 600;
+        margin-bottom:2vh;
+        text-align: center;
+    }
+    border:solid 0.1px black;
+        font-size:25px;
+        border-radius: 1vh;
+        padding: 2vh 2vw;
+        background: white;
+        box-shadow: 1px 1px 1px 1px grey;
+        margin:2vh 1vw;
+        width:60vw;
+        height: 55vh;
+        text-align: left;
+        @media(max-width:740px){
+            width:90vw;
+            height:85vh;
+        }
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 25vh;
+        div{
+        }
+        
+    }
+    .payment{
+        margin-top:0.5vh;
+        height: 5.5vh;
+        position: relative;
+        top:8vh;
+    }
+}
+
+.user3Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:5vh;
+    background-color: #ececec;
+    min-height: 85vh;
+    @media(max-width:740px){
+        padding-top: 0px;
+        .map{
+            position: absolute;
+            top:60vh;
+            left:10vw;
+        }
+    }
+}

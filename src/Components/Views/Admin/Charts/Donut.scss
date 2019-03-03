@@ -1,0 +1,26 @@
+.donuts{
+    #donut1{
+    display:inline;
+
+    }
+    #donut2{
+    display: none;
+    }    
+}
+@media(max-width:740px){
+.donuts{
+    #donut1{
+    display:none;
+
+    }
+    #donut2{
+    display: inline;
+    }    
+}
+}
+
+
+
+
+
+

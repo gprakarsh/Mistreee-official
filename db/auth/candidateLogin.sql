@@ -1,0 +1,1 @@
+select * from apps where username=$1;

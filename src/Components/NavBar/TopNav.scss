@@ -1,0 +1,56 @@
+@import './../../variables';
+.TopNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    max-width: 100vw;
+    padding: 1vh 15vw;
+    height:60%;
+    i{
+        color:white;
+        display: none;
+        font-family: $logo;
+    }
+    #logo{
+        font-size:35px;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    ul{
+        display: flex;
+        font-size:28px;
+        li{
+            margin:8px 15px;
+            color:white;
+            transition: color 0.2s linear;
+            cursor:pointer;
+        }
+        #username{
+        margin:8px 10px;
+        color:white;
+        }
+        li:hover{
+            color:$highlight
+        }
+    }
+}
+
+@media(max-width:740px){
+  .TopNav{
+      padding: 1% 1% !important;
+    //   max-width:100% !important;
+      #logo{
+        margin-left:2vw;
+        font-size:25px;
+      }
+      ul{
+          font-size:20px;
+          li{
+              margin-right:5px;
+          }
+      }
+  }
+}

@@ -1,0 +1,29 @@
+@import '../../../variables';
+
+.ItemsMapper{
+    display: flex !important;
+    flex-wrap:wrap;
+    button{
+        @include buttonReset;
+        color:white;
+        padding:1vh 1vw !important;
+        height:auto !important;
+        width:auto !important;
+        background:$highlight;
+        margin-right:5px;
+        margin-bottom:5px !important;
+        cursor:auto !important;
+        margin-top:0px !important;
+        i{
+          margin-left:1vw !important;
+          font-size: 12px;
+          position:relative;
+          bottom:0.6vh;
+          right:-0.7vw;
+          cursor: pointer;
+        }
+    }
+    button:hover{
+        background:black !important;
+    }
+}

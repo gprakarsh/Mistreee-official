@@ -1,0 +1,25 @@
+.notApproved{
+    div{
+        h2{
+            position: relative;
+            top:20vh;
+            font-size:55px;
+        }
+        p{
+            font-size: 30px;
+            margin-top:5vh;
+            position: relative;
+            top:20vh;
+        }
+    }
+    @media(max-width: 740px){
+        h2{
+            font-size:35px;
+            word-wrap: break-word;
+        }
+        p{
+            font-size: 20px;
+            word-wrap: break-word;
+        }
+    }
+}

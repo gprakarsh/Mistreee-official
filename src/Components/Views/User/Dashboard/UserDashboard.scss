@@ -1,0 +1,133 @@
+@import './../../../../variables';
+
+.user-view{
+    text-align: center;
+    padding: 7vh 30vw;
+    h1{
+        text-align:center;
+        font-size:60px;
+        margin:4vh 0;  
+    }
+    #message{
+        margin-bottom: 4vh;
+        font-size:25px;
+        text-align:center;
+        color:$highlight;
+        font-weight: 600;
+    }
+    p{
+        text-align: left;
+    }
+    button{
+        @include buttonReset;
+        font-size: 18px;
+        margin-top:1vh;
+        margin-right:1vw;
+        background-color:$highlight2;
+        height: 7vh;
+        width: 13vw;
+        padding-left:0.7vw;
+        text-align:left;
+        color:white;
+        font-weight: 600;
+        transition: background-color 0.2s linear;
+        
+    }
+    button:hover{
+        background-color: black;
+    }
+    span{
+        color:red;
+        font-size:10px;
+        position: relative;
+        bottom:2vh;
+    }
+    #buttons{
+        display:flex;
+        justify-content: center;
+        button{
+            text-align: center;
+        }
+    }
+    .app2{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border:solid 0.1px black;
+        border-radius: 1vh;
+        padding: 2vh 2vw;
+        background: white;
+        box-shadow: 0.2px 0.2px 0.2px 0.2px grey;
+        margin:2vh 1vw;
+        width:auto;
+        font-size:20px;
+        p{
+            width:auto;
+        }
+    }
+    @media(max-width:740px){
+        button{
+            width:40vw;
+        }
+    }    
+}
+
+.edit-view{
+    font-family: $font;
+    padding: 5vh 30vw;
+    text-align:left;
+    display: flex;
+    flex-direction: column;
+    
+    p,span{
+        font-size:20px;
+        margin-bottom:1vh;
+    }
+    input,textarea{
+        border: 0.5px solid rgba(0,0,0,0.4);
+        margin-bottom:2vh;
+        padding: 1vh 1vw;
+        font-size:20px;
+        color:black;
+        font-weight:100;
+        transition: border 0.4s linear;
+    }
+    input:focus,textarea:focus{
+        outline:none;
+        border: 0.5px solid $highlight;
+    }button{
+        @include buttonReset;
+        font-size: 18px;
+        margin-top:4vh;
+        margin-right:1vw;
+        background-color:$highlight2;
+        height: 7vh;
+        width: 13vw;
+        padding-left:0.7vw;
+        text-align:left;
+        color:white;
+        font-weight: 600;
+        transition: background-color 0.2s linear;
+        position: relative;
+        bottom:20vh;
+    }
+    button:hover{
+        background-color: black;
+    }
+    span{
+        color:red;
+    }
+    #userButtons{
+        display:flex;
+        button{
+
+            text-align: center;
+        }
+    }
+    @media(max-width: 740px){
+        padding: 5vh 5vw;
+        button{
+            width:40vw;
+        }
+    }
+}

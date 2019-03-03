@@ -1,0 +1,136 @@
+@import './../../../variables';
+
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+.MechanicWizard{
+    overflow-x: none !important;
+    font-family: $font;
+    padding: 0vh 30vw;
+    text-align:left;
+    display: flex;
+    flex-direction: column;
+
+    .files{
+        display: flex;
+        
+    }
+    img{
+        height:10vh;
+        width:10vh;
+        margin-left:2vw;
+    }
+    h1{
+        margin:5vh 0;
+        font-size:40px;
+    }
+    p,span{
+        font-size:20px;
+        margin-bottom:1vh;
+    }
+    input,textarea{
+        font-size:20px;
+        border: 0.5px solid rgba(0,0,0,0.4);
+        margin-bottom:2vh;
+        padding: 1vh 1vw;
+        color:black;
+        font-weight:100;
+        transition: border 0.4s linear;
+    }
+    #fileCollector{
+        width:20vw;
+    }
+    input:focus,textarea:focus{
+        outline:none;
+        border: 0.5px solid $highlight;
+    }
+    button{
+        @include buttonReset;
+        
+        display: flex;
+        font-size: 20px;
+        margin-top:2vh;
+        margin-bottom:2vh;
+        background-color:$highlight;
+        height: 7vh;
+        width: 43vw;
+        padding-left:0.7vw;
+        text-align:left;
+        color:white;
+        font-weight: 600;
+        i{
+            color:white;
+            margin-left:27.5vw;
+            transition: margin-left 0.2s linear;
+        }
+        transition: background-color 0.2s linear
+    }
+    #submit{
+        position: relative;
+        bottom:20vh;
+    }
+    button:hover{
+        background-color: black;
+        i{
+            margin-left:28vw;
+        }
+    }
+    span ,#mismatch{
+        color:red;
+    }
+    #match{
+        color:$highlight2;
+    }
+    .items{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #add{
+        position: relative;
+        top:0vh;
+        background-color:$highlight2;
+        display: flex;
+        flex-direction: row;
+        width:13vw;
+        i{
+            color:white;
+            margin-left:2.5vw;
+            transition: margin-left 0.2s linear;
+        }
+        transition: background-color 0.2s linear;
+    }
+    #add:hover{
+        background-color: $highlight3;
+        i{
+            margin-left:3vw;
+        }
+    }
+    @media(max-width:740px){
+        padding: 0vh 10vw;
+        button{
+            padding:0 5vw;
+            height:5vh;
+            width:auto !important;
+            i{
+                margin-left:42vw !important;
+            }
+        }
+        button:hover{
+            i{
+            margin-left:42.5vw;  
+            }          
+        }
+        #submit{
+            i{
+                margin-left:18vw !important;
+            }
+        }
+        #submit:hover{
+            i{
+            margin-left:18.5vw;  
+            }          
+        }
+    }
+}

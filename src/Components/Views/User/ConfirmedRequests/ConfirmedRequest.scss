@@ -1,0 +1,48 @@
+.confirmed{
+    background-color: #ececec;
+    min-height:88vh;
+    padding: 5vh 15vw;
+    height:auto;
+    display: flex ;
+                            
+    .app{
+        display: inline-block;
+    border:solid 0.1px black;
+    font-size:30px;
+    border-radius: 1vh;
+    padding: 2vh 2vw;
+    background: white;
+    box-shadow: 0.4px 0.4px 0.4px 0.4px grey;
+    margin:2vh 1vw;
+    width:30vw;
+    height: auto;
+    text-align: left;
+    .mechDetails{
+        display: flex;
+        img{
+            height:10vh;
+            width:10vh;
+            border-radius:30px;
+            text-align:left;
+            margin-right: 4vw;            
+            background: #ececec;
+        }
+    }
+    
+}
+
+}
+
+@media(max-width:740px){
+    .confirmed{
+        width:100vw !important;
+        display: flex !important;
+        flex-wrap:nowrap !important;
+        flex-direction: column !important;
+        .app{
+            font-size:18px;
+            height:auto;
+            width:auto !important;
+        }
+    }
+}

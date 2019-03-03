@@ -1,0 +1,57 @@
+@import '../../../../variables';
+
+.reqs{
+    padding: 5vh 10vw;
+    background-color: #ececec;
+    min-height: 91vh;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    .req{
+        border:solid 0.1px black;
+        border-radius: 1vh;
+        padding: 2vh 2vw;
+        font-size:30px;
+        background: white;
+        box-shadow: 0.2px 0.2px 0.2px 0.2px grey;
+        margin:2vh 1vw;
+        width:37vw;
+        height:30vh;
+        text-align:left;
+        button{
+            @include buttonReset;
+            font-size: 18px;
+            margin-top:2vh;
+            margin-right:1vw;
+            background-color:$highlight2;
+            height: 5vh;
+            width: 13vw;
+            text-align:center;
+            color:white;
+            font-weight: 600;
+            transition: background-color 0.2s linear
+        }
+        button:hover{
+            background-color: $highlight3;
+        }
+    }
+}
+
+@media(max-width:740px){
+    .reqs{
+        width:auto !important;
+        display: flex !important;
+        flex-wrap:nowrap !important;
+        flex-direction: column !important;
+        .req{
+            font-size:16px;
+            height:21vh;
+            width:auto;
+            button{
+                font-size: 9px;
+                width:30vw !important;
+            }
+        }
+    }
+}

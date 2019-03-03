@@ -1,0 +1,1 @@
+select count(id) from users where isadmin=false and ismechanic=false;

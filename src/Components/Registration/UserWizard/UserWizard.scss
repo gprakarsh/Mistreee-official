@@ -1,0 +1,76 @@
+@import './../../../variables';
+
+.UserWizard{
+    font-family: $font;
+    padding: 0% 30%;
+    text-align:left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height:180vh;
+    width:auto;
+    h1{
+        margin:5vh 0;
+        font-size:40px;
+    }
+    p,span{
+        font-size:20px;
+        margin-bottom:1vh;
+    }
+    input{
+        border: 0.5px solid rgba(0,0,0,0.4);
+        width:100%;
+        margin-bottom:2vh;
+        padding: 1vh 1vw;
+        font-size:20px;
+        color:black;
+        font-weight:100;
+        transition: border 0.4s linear;
+    }
+    input:focus{
+        outline:none;
+        border: 0.5px solid $highlight;
+    }
+    button{
+        @include buttonReset;
+        position: relative;
+        bottom:26vh;
+        font-size: 18px;
+        background-color:$highlight;
+        min-height: 8vh;
+        width: 12vw;
+        padding-left:0.7vw;
+        text-align:left;
+        color:white;
+        font-weight: 600;
+        i{
+            color:white;
+            margin-left:2.5vw;
+            transition: margin-left 0.2s linear;
+        }
+        transition: background-color 0.2s linear
+    }
+    button:hover{
+        background-color: black;
+        i{
+            margin-left:3vw;
+        }
+    }
+    span ,#mismatch{
+        color:red;
+    }
+    #match{
+
+        color:$highlight2;
+    }  
+    @media(max-width:740px){
+        padding: 0% 10%;
+        button{
+            width:30vw;
+            position: relative;
+            bottom:22vh;
+        }
+    }  
+}
+
+

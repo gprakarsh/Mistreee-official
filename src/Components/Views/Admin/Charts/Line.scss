@@ -1,0 +1,27 @@
+.lineCharts{
+    .lineChart1{
+    display:inline;
+
+    }
+    .lineChart2{
+    display: none;
+    }    
+}
+@media(max-width:740px){
+    .lineCharts{
+        .lineChart1{
+        display:none;
+    
+        }
+        .lineChart2{
+        display: inline;
+        }    
+    }
+    }
+    
+    
+    
+    
+    
+    
+    

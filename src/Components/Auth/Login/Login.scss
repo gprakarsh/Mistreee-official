@@ -1,0 +1,107 @@
+@import './../../../variables';
+
+.Login{
+    font-family: $font;
+    padding: 20vh 30vw;
+    text-align:left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    #cross{
+    position:absolute;
+    right:20vw;
+    top:25vh;
+    color:black;
+    font-size:35px;
+    }
+
+    span{
+        font-size:20px;
+        color:red;
+        margin-bottom:1vh;
+    }
+
+    h1{
+        margin:3vh 0;
+        font-size:40px;
+
+    }
+    p{
+        font-size:20px;
+        margin-bottom:1vh;
+    }
+    input{
+        border: 0.5px solid rgba(0,0,0,0.4);
+        margin-bottom:2vh;
+        padding: 1vh 1vw;
+        font-size:20px;
+        color:black;
+        font-weight:100;
+        transition: border 0.4s linear;
+    }
+    input:focus{
+        outline:none;
+        border: 0.5px solid $highlight;
+    }
+    button{
+        @include buttonReset;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 18px;
+        background-color:$highlight;
+        height: 7vh;
+        width: 40vw;
+        padding-left:0.7vw;
+        text-align:left;
+        color:white;
+        font-weight: 600;
+        p{
+            margin:1vw;
+        }
+        i{
+            color:white;
+            margin-right:2vw;
+            margin-left:17vw;
+            transition: margin-right 0.2s linear;
+        }
+        transition: background-color 0.2s linear
+    }
+    button:hover{
+        background-color: black;
+        i{
+            margin-right:1vw;
+        }
+    }
+    #signUpNav{
+        display: flex;
+        margin-top:2vh;
+        p{
+            margin-right:3px;
+            font-size:16px;
+        }
+        a{
+            text-decoration: none;
+            color:$highlight;
+        }
+    }
+}
+
+@media(max-width:740px){
+    .Login{
+        padding: 10vh 10vw;
+        #cross{
+            position:absolute;
+            right:10vw;
+            top:19vh;
+            color:black;
+            font-size:20px;
+        }
+        button{
+            height:5.5vh;
+            width:auto !important;
+        }
+    }
+}
+

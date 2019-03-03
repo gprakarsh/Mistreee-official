@@ -1,0 +1,12 @@
+@import '../../../variables';
+
+.UserNav{
+    @include secondNav;
+    @media(max-width:740px){
+        ul{
+            li{
+                font-size:15px ;
+            }
+        }
+    }
+}

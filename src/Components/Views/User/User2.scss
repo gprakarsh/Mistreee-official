@@ -1,0 +1,40 @@
+@import './../../../variables';
+
+
+
+.user2{
+    padding: 10vh 20vw;
+    font-size:35px;
+    background-color: #ececec;
+    min-height: 85vh;
+    h1{
+        font-size:45px;
+    }
+    p{
+        font-size:25px;
+        margin:5vh 0;
+    }
+    #timeslots{
+        text-align: left;
+    }
+    button{  
+        font-size:35px;      
+        @include buttonReset;
+        color:white;
+        padding:1vh 1vw !important;
+        height:auto !important;
+        width:auto !important;
+        background:$highlight2;
+        margin-right:5px;
+        margin-bottom:5px !important;
+        cursor: pointer !important;
+        margin-top:0px !important;
+        transition:background-color 0.2s linear;
+    }
+    button:hover{
+        background-color:black !important;
+    }
+    @media(max-width: 740px){
+        padding:2vh 3vw;
+    }
+}
