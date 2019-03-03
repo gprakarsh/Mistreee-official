@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { updateUser } from '../../../ducks/reducer'
 import './Mechanic.scss'
 import greeting from 'greeting'
-import missingImage from './../../../assets/Image-missing.png'
+import missingImage from './../../../assets/Image-missing.webp'
 import Donut from '../Admin/Charts/Donut';
 import { geolocated } from 'react-geolocated';
 import Geocode from "react-geocode";

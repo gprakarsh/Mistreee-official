@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { connect } from 'react-redux'
 import { updateUser } from '../../ducks/reducer';
@@ -7,7 +6,6 @@ import CommonNav from './CommonNav/CommonNav';
 import AdminNav from './AdminNav/AdminNav';
 import MechNav from './MechNav/MechNav';
 import LoggedInNav from './LoggedInNav/LoggedInNav';
-import logo from './../../assets/logo.png'
 import { withRouter } from 'react-router-dom'
 import UserNav from './UserNav/UserNav'
 

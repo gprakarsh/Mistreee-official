@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import io from 'socket.io-client';
 import './Chat.scss'
 import uniqid from 'uniqid'
-import missingImage from './../../assets/Image-missing.png'
+import missingImage from './../../assets/Image-missing.webp'
 import { connect } from 'react-redux'
 
 class Chat extends Component {

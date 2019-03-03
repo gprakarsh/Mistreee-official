@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { updateUser } from './../../../../ducks/reducer'
 import ItemsMapper from '../../../Registration/MechanicWizard/ItemsMapper';
 import './JobRequests.scss'
-import missingImage from './../../../../assets/Image-missing.png'
+import missingImage from './../../../../assets/Image-missing.webp'
 import {Link} from 'react-router-dom';
 import ReactLoading from 'react-loading';
 import io from 'socket.io-client'

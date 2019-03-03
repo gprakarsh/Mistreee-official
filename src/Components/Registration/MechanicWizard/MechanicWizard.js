@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { updateUser } from './../../../ducks/reducer'
 import ItemsMapper from './ItemsMapper';
 import './MechanicWizard.scss'
-import missingImage from './../../../assets/Image-missing.png';
+import missingImage from './../../../assets/Image-missing.webp';
 import MapContainer from './../../MapContainer/MapContainer';
 import { geolocated } from 'react-geolocated';
 import Geocode from "react-geocode";
