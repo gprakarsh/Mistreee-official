@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 1fr,1fr,1fr,1fr,1fr;
     grid-template-rows: 1fr,1fr,2fr;
-    padding:0 15vw;
+    padding:0 12vw;
     text-align:left;
     width:100%;
     h1{
@@ -19,13 +19,13 @@
     img{
     grid-column:3/span 3;
     grid-row:1/span 2;
-    width:100%;
+    width:50%;
     height:100%;
     }
     #repair{
     grid-column:1/span 1;
     grid-row:2/span 1;
-    margin-right:3vw;
+    // margin-right:3vw;
     // padding-left:2vw;
 
     h2{
@@ -39,7 +39,7 @@
         font-size:18px;
         font-weight: 100;
         word-wrap: break-word;
-        max-width:70vw;
+        max-width:20vw;
 
     }
     button{
@@ -70,7 +70,7 @@
     #revive{
         grid-column:2/span 1;
         grid-row:2/2;
-        margin-right: 5vw;
+        // margin-right: 5vw;
         // padding-left:2vw;
         h2{
             margin-bottom:3vh;
@@ -81,8 +81,9 @@
         }
         p{
             font-size:18px; 
-            max-width:70vw;
             word-wrap: break-word;
+        max-width:20vw;
+
 
 
         }
@@ -117,7 +118,7 @@
 }
 
 #techTag{
-    margin:11vh 15vw;
+    margin:11vh 12vw;
     font-size:40px;
     font-weight: bold;
     text-align: left;
@@ -259,7 +260,7 @@ footer{
         flex-direction: column;
         align-items: center;
         width:100vw;
-        padding:0 2vw !important;
+        padding:0 0vw !important;
         
         h1{
             margin:3vh 11vw;
@@ -277,6 +278,9 @@ footer{
         }
         .line{
             margin-top:0vh !important;
+        }
+        p{
+            max-width: 70vw !important;
         }
     }
 }

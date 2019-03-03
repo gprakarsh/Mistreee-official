@@ -2,7 +2,6 @@
 
 .appointments{
     padding: 5vh 10vw;
-    background-color: #ececec;
     min-height: 88vh;
     height:auto;
     display:flex;
@@ -42,7 +41,7 @@
 
 @media(max-width:740px){
     .appointments{
-        width:100vw !important;
+        width:80vw !important;
         display: flex !important;
         flex-wrap:nowrap !important;
         flex-direction: column !important;
