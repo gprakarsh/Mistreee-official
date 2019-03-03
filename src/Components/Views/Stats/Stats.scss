@@ -6,12 +6,12 @@
     min-height:88vh;
     h1{
         text-align:center;
-        font-size:30px;
+        font-size:60px;
         margin:4vh 0;  
     }
     #message{
         margin-bottom: 4vh;
-        font-size:10px;
+        font-size:20px;
         text-align:center;
         color:$highlight;
         font-weight: 600;
@@ -24,7 +24,7 @@
         border-radius:1vh;
         box-shadow: 0.2px 0.2px 0.2px 0.2px grey;
         width:30vw;
-        height: 45vh;
+        min-height: 45vh;
         display: flex;
         justify-content: center;
         background: white;

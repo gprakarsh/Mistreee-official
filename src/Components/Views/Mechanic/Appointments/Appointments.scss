@@ -24,7 +24,7 @@
             margin-right:1vw;
             background-color:$highlight2;
             height: 5vh;
-            width: 13vw;
+            min-width: 13vw;
             text-align:center;
             color:white;
             font-weight: 600;
@@ -48,7 +48,7 @@
         flex-direction: column !important;
         .app{
             font-size:18px;
-            height:16.5vh;
+            min-height:16.5vh;
             width:auto !important;
         }
     }
