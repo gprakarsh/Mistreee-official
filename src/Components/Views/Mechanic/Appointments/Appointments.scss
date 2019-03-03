@@ -15,8 +15,28 @@
         box-shadow: 0.2px 0.2px 0.2px 0.2px grey;
         margin:2vh 1vw;
         width:37vw;
-        height: 28vh;
+        max-height: 40vh;
         text-align: left;
+        button{
+            @include buttonReset;
+            font-size: 18px;
+            margin-top:2vh;
+            margin-right:1vw;
+            background-color:$highlight2;
+            height: 5vh;
+            width: 13vw;
+            text-align:center;
+            color:white;
+            font-weight: 600;
+            transition: background-color 0.2s linear
+        }
+        button:hover{
+            background-color: $highlight3;
+        }
+        a{
+            text-decoration: none;
+            color:white;
+        }
     }
 }
 

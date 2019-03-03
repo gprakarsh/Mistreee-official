@@ -39,10 +39,11 @@ class Appointments extends Component {
                 <div key={i} className='app'>
                 {console.log(req)}
                     <p>Name: {req.name}</p>
-                    <p>Address: {req.address}</p>
                     <p>Item: {req.item}</p>
                     <p>Time: {req.time}</p>
                     <p>Number: {req.number}</p>
+                    <p>Address: {req.address}</p>
+                    <button><a href={`http://maps.google.com/maps?daddr=${req.address}`} target="_blank">Get Directions</a></button>
                 </div>
             )
         })
