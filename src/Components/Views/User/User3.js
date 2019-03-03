@@ -19,7 +19,6 @@ class User3 extends Component {
 
     onToken = (token) => {
         token.card = void 0;
-        console.log('token', token);
         axios.post('/api/payment', { token, amount: 2000 }).then(response => {
             this.confirm()
         });
@@ -37,13 +36,11 @@ class User3 extends Component {
         Geocode.fromAddress(this.props.location.state.address).then(
             response => {
                 const { lat, lng } = response.results[0].geometry.location;
-                console.log(lat, lng)
                 this.setState({
                     lat, lng
                 })
             },
             error => {
-                console.error(error);
             }
         )
     }

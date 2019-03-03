@@ -44,7 +44,6 @@ class UserDashboard extends Component {
     deletor = async () => {
         const { id } = this.props
         const answer = window.confirm("Are you sure you want to delete your account");
-        console.log(answer)
         if (answer) {
             const deleteAccount = await axios.delete(`/api/deleteAccount/?id=${id}`)
             this.logout()
@@ -73,7 +72,6 @@ class UserDashboard extends Component {
                     })
                 },
                 error => {
-                    console.error(error);
                 }
             );
         }

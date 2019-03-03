@@ -14,7 +14,6 @@ class NotApproved extends Component {
                 this.props.updateUser(userRes.data)
             }
             catch (err) {
-                console.log(err)
                 this.props.history.push('/')
             }
         }

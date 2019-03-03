@@ -29,17 +29,13 @@ class ServiceRequests extends Component {
                 let req = this.state.requests[i]
                 let destination = req.address.split(' ').join('+')
                 
-                 axios.get(`http://maps.googleapis.com/maps/api/directions/json?origin=Disneyland&destination=Universal+Studios+Hollywood&key=${process.env.REACT_APP_GOOGLEAPIKEY}`).then(res=>{
-                     console.log(res)
-                 })
-                
             }
 
             this.setState({
                 lat: latitude,
                 lng: longitude
                 // address:res.data.results[0].formatted_address
-            }, () => console.log(this.state))
+            })
         }
     }
     getReq = async () => {
@@ -74,7 +70,7 @@ class ServiceRequests extends Component {
             )
         })
         if(this.state.loading){
-            return(<div className='loading'><ReactLoading type={'bars'} color={'black'} />{console.log( typeof this.props.id)}</div>)
+            return(<div className='loading'><ReactLoading type={'bars'} color={'black'} /></div>)
         }
         return (
             <div className='reqs'>

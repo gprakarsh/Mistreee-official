@@ -18,7 +18,6 @@ class User extends Component {
     }
 
     componentDidMount = async () => {
-        console.log('hit')
         const { name } = this.props
         if (!name) {
             try {
@@ -26,7 +25,6 @@ class User extends Component {
                 this.props.updateUser(userRes.data)
             }
             catch (err) {
-                console.log(err)
                 this.props.history.push('/')
             }
         }
@@ -39,10 +37,8 @@ class User extends Component {
                     timeslots: timeslotsRes.data,
                     loading:false
                 })
-                console.log(this.state)
             }
             catch (err) {
-                console.log(err)
             }
         }
     }
@@ -80,7 +76,7 @@ class User extends Component {
         }} key={i}><button >{item.item}</button></Link>)
 
         if (this.state.loading) {
-            return (<div className='loading'><ReactLoading type={'bars'} color={'black'} />{console.log(typeof this.props.id)}</div>)
+            return (<div className='loading'><ReactLoading type={'bars'} color={'black'} /></div>)
         }
         
         return (

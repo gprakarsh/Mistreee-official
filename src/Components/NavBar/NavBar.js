@@ -13,7 +13,6 @@ import UserNav from './UserNav/UserNav'
 class NavBar extends Component {
 
     componentDidMount = async () => {
-        console.log('NavBar rendered')
         const { name } = this.props
         if (!name) {
             try {

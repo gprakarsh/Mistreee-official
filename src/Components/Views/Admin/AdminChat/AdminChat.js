@@ -47,7 +47,6 @@ class AdminChat extends Component {
 
         this.socket.emit('join room', 'adminChatRoom')
         this.socket.on('someoneWantsToChat', conversationId => {
-            console.log('Subscribing to' + conversationId)
             this.socket.emit('join room', conversationId)
         })
         this.socket.on('msg', data => {
@@ -73,7 +72,6 @@ class AdminChat extends Component {
 
         var objDiv = document.getElementById("currentConversation");
         if (objDiv) {
-            console.log({ objDiv })
             objDiv.scrollTop = objDiv.scrollHeight;
         }
     }
@@ -91,7 +89,6 @@ class AdminChat extends Component {
 
 
 
-        // console.log(highlight)
 
 
 
@@ -111,9 +108,7 @@ class AdminChat extends Component {
         let conversation = '';
 
         if (currentId !== '') {
-            console.log(this.state[currentId])
             conversation = this.state[currentId].map(message => {
-                console.log(message)
                 if (message.admin) {
                     return (
                         <div id='right'>

@@ -28,23 +28,14 @@ class Chat extends Component {
             conversationId,
             messages
         },this.scrollToBottom())
-        // this.componentDidUpdate()
     }
 
-    // componentDidUpdate(prevProps){
-    //     if(prevProps!==this.props){
-    //         console.log('props changes')
-    //         this.setState({
-    //             isadmin:this.props.isadmin
-    //         })
-    //     }
-    // }
+    
 
 
     setStateButton = () => {
         const { setAsButton, conversationId } = this.state
 
-        // this.socket.emit('someoneWantsToChat', conversationId)
 
         this.setState({
             setAsButton: !setAsButton
@@ -68,7 +59,6 @@ class Chat extends Component {
     }
 
     updateMessages = (e) => {
-        console.log(e.which)
         if (e.which === 13) {
             const { message } = this.state
             let messages = this.state.messages.slice()
@@ -106,7 +96,6 @@ class Chat extends Component {
 
         var objDiv = document.getElementById("screen");
         if(objDiv){
-            console.log({objDiv})
             objDiv.scrollTop = objDiv.scrollHeight;
         }
     }
@@ -141,7 +130,6 @@ class Chat extends Component {
 
         return (
             <div>
-                {console.log(this.props.admin)}
                 {setAsButton
                         ? <button onClick={setStateButton} className='chatButton'><i class="fas fa-mobile" id='chatButton'></i></button>
                         : <div className='chatWindow'>

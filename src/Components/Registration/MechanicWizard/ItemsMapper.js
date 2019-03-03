@@ -3,7 +3,6 @@ import './ItemsMapper.scss'
 
 function ItemsMapper(props) {
     const { items, deleteItem, style1,style2 } = props
-    console.log({ items })
     const mapper = items.map((item, i) => {
         if (style1 && style2) {
             return (

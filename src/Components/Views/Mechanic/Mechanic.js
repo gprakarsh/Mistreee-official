@@ -50,7 +50,6 @@ class Mechanic extends Component {
     deletor = async () => {
         const { id } = this.props
         const answer = window.confirm("Are you sure you want to delete your account");
-        console.log(answer)
         if (answer) {
             const deleteAccount = await axios.delete(`/api/deleteAccount/?id=${id}`)
             this.logout()
@@ -79,7 +78,6 @@ class Mechanic extends Component {
                     })
                 },
                 error => {
-                    console.error(error);
                 }
             );
         }
@@ -129,9 +127,7 @@ class Mechanic extends Component {
 
         }).catch(err => {
             // just catches the error of something went wrong on the server end
-            console.log(err)
         })
-        console.log(this.state)
     }
 
     uploadFile = (signedRequest, file, url) => {

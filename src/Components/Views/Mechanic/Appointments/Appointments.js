@@ -25,7 +25,6 @@ class Appointments extends Component {
     }
     getReq = async () => {
         const { id } = this.props
-        console.log(id)
         const res = await axios.get(`/api/mech/appointments/?id=${id}`)
         this.setState({
             appointments: res.data,
@@ -37,7 +36,6 @@ class Appointments extends Component {
         const mapper = this.state.appointments.map((req, i) => {
             return (
                 <div key={i} className='app'>
-                {console.log(req)}
                     <p>Name: {req.name}</p>
                     <p>Item: {req.item}</p>
                     <p>Time: {req.time}</p>
@@ -48,7 +46,7 @@ class Appointments extends Component {
             )
         })
         if(this.state.loading){
-            return(<div className='loading'><ReactLoading type={'bars'} color={'black'} />{console.log( typeof this.props.id)}</div>)
+            return(<div className='loading'><ReactLoading type={'bars'} color={'black'} /></div>)
         }
         return (
             <div >

@@ -44,7 +44,7 @@ class MechanicWizard extends Component {
                     lat: latitude,
                     lng: longitude,
                     address:res.data.results[0].formatted_address
-                }, () => console.log(this.state))
+                })
             }
         }
     }
@@ -61,9 +61,6 @@ class MechanicWizard extends Component {
                     this.setState({
                         lat, lng
                     })
-                },
-                error => {
-                    console.error(error);
                 }
             );
         }
@@ -130,9 +127,9 @@ class MechanicWizard extends Component {
 
         }).catch(err => {
             // just catches the error of something went wrong on the server end
-            console.log(err)
+            
         })
-        console.log(this.state)
+        
     }
 
     uploadFile = (signedRequest, file, url) => {

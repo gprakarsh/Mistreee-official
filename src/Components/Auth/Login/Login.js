@@ -48,7 +48,7 @@ class Login extends Component {
                 this.props.updateUser(loginRes.data)
                 this.props.history.push('/applied/na')
             }
-            console.log({mechDetails:loginRes.data})
+           
         }
         catch (err) {
             this.setState({

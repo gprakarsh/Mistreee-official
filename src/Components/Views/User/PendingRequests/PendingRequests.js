@@ -41,7 +41,7 @@ class PendingRequests extends Component {
             )
         })
         if (this.state.loading) {
-            return (<div className='loading'><ReactLoading type={'bars'} color={'black'} />{console.log(typeof this.props.id)}</div>)
+            return (<div className='loading'><ReactLoading type={'bars'} color={'black'} /></div>)
         }
         return (
             <div className='pending'>
