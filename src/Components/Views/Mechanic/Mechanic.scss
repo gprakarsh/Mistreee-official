@@ -2,9 +2,8 @@
 
 
 .user-view{
-    background-color: #ececec;
     min-height: 91vh;
-    width: 100vw;
+    width: 50vw;
     height:auto;
     text-align: center;
     padding: 5vh 10vw;
@@ -19,7 +18,7 @@
             text-align: center;
         }
     }
-    .app{
+    .appMech{
         display: flex;
         justify-content: center;
         border:solid 0.1px black;
@@ -156,11 +155,12 @@
 @media(max-width:740px){
     .user-view{
         display: flex;
-        align-items:center;
+        justify-content: center;
+        width:80vw;
         button{
             padding: 1vh 1vw !important;
         }
-        .app{
+        .appMech{
             width:auto !important;
             img{
                 height: 8vh !important;
@@ -171,6 +171,6 @@
 
 @media(max-width:740px){
     .user-view{
-        padding: 5vh 10vw;
+        padding: 5vh 5vw;
     }
 }

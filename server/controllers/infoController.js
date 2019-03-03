@@ -223,8 +223,13 @@ module.exports = {
             let address = req.address.split(' ').join('+')
             const res = await axios.get(`https://maps.googleapis.com/maps/api/directions/json?origin=${mechAddress}&destination=${address}&key=${process.env.REACT_APP_GOOGLEAPIKEY}`)
 
-            let distance = res.data.routes[0].legs[0].distance.text
-            distances.push(distance)
+            if(res.data.routes[0]){
+                let distance = res.data.routes[0].legs[0].distance.text
+                distances.push(distance)
+            }
+            else{
+                distances.push('Unavailable')
+            }
 
         }
 

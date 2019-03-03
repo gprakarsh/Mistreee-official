@@ -196,7 +196,7 @@ class Mechanic extends Component {
                             <h1>{greeting.random()} {name}!</h1>
                             <p id='message'>Welcome to your dashboard. Your one stop account manager.</p>
                             <span>{errMessage}</span>
-                            <div className='app'>
+                            <div className='appMech'>
                                 <img src={url} onError={(e) => e.target.src = missingImage} />
                                 <div className='info'>
                                     <p>Name: {name}</p>
