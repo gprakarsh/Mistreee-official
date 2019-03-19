@@ -6,7 +6,6 @@ import Axios from 'axios';
 import Geocode from "react-geocode";
 import MapContainer from '../../MapContainer/MapContainer';
 import './User3.scss'
-import MyStoreCheckout from '../../Payments/MyStoreCheckout';
 import StripeCheckout from 'react-stripe-checkout';
 
 

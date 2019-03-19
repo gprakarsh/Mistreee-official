@@ -52,7 +52,7 @@ width:auto;
     #screen{
         height:40vh;
         padding: 1vw 0.2vw;
-        width:100%;
+        width:18vw;
         font-size:18px;
         color:white;
         overflow-y:scroll;
@@ -86,7 +86,7 @@ width:auto;
                 background: $highlight;
                 border-radius:8px;
                 box-shadow: 0.2px 0.2px 0.2px 0.2px $highlight;  
-                max-width:15vw;   
+                max-width:18vw;   
                 word-wrap: break-word;
                 text-align: left;
                 @media(max-width:740px){
@@ -102,7 +102,7 @@ width:auto;
         color:black;
         font-weight:100;
         transition: border 0.4s linear;
-        width:100%;
+        width:18vw;
         height:5vh;
     }
     input:focus{
@@ -117,8 +117,8 @@ width:auto;
         right:0;
         #screen{
             height:100%;
+            width:90vw;
             #right{
-                width: 100vw;
                 p{
                     max-width:80vw !important;
                 }
@@ -135,6 +135,9 @@ width:auto;
                 position: absolute;
                 right:3vw;
             }
+        }
+        input{
+            width: 100%;
         }
     }
 

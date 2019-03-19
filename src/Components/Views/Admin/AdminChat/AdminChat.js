@@ -68,8 +68,6 @@ class AdminChat extends Component {
     }
 
     scrollToBottom() {
-
-
         var objDiv = document.getElementById("currentConversation");
         if (objDiv) {
             objDiv.scrollTop = objDiv.scrollHeight;

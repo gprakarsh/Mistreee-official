@@ -36,6 +36,7 @@ massive(CONNECTION_STRING).then((db) => {
   io.on('connection', socket => {
     ssl.setSocketListeners(socket, db, io)
   })
+  
 })
 
 
@@ -62,7 +63,6 @@ app.post('/api/payment', function(req, res, next){
     }
   }
   const convertedAmt = parseInt(pennies.join(''));
-  console.log({convertedAmt})
   const charge = stripe.charges.create({
   amount: convertedAmt, // amount in cents, again
   currency: 'usd',

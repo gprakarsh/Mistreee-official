@@ -33,7 +33,7 @@
     "react-geolocated": "^2.4.1",
     "react-google-maps": "^9.4.5",
     "react-loading": "^2.0.3",
-    "react-redux": "^6.0.0",
+    "react-redux": "^6.0.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.5",
     "react-stripe-checkout": "^2.6.3",

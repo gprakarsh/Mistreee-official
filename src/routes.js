@@ -20,7 +20,6 @@ import Appointments from "./Components/Views/Mechanic/Appointments/Appointments"
 import Stats from "./Components/Views/Stats/Stats";
 import Reason from "./Components/Views/Admin/JobRequests/Reason/Reason";
 import AdminChat from "./Components/Views/Admin/AdminChat/AdminChat";
-import MyStoreCheckout from "./Components/Payments/MyStoreCheckout";
 
 export default (
   <Switch>
@@ -35,7 +34,6 @@ export default (
       <Route path='/mechanic/req' component={ServiceRequests}/>
       <Route path='/mechanic' component={Mechanic}/>
       <Route path='/user/pending' component={PendingRequests}/>
-      <Route path='/user/checkout' component={MyStoreCheckout}/>
       <Route path='/user/confirmed' component={ConfirmedRequests}/>
       <Route path='/user/dashboard' component={UserDashboard}/>
       <Route path='/user/3' component={User3}/>

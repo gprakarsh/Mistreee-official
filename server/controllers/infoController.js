@@ -1,7 +1,7 @@
 const nodeMailer = require('nodemailer')
 require('dotenv').config()
-const accountSid = 'AC8efad7938dffb983f943e297fb6c12c2';
-const authToken = 'f9cc58d99da0a09207f945889de64e26';
+const {accountSid} = process.env;
+const {authToken} = process.env;
 const emailExistence = require('email-existence')
 const axios = require(`axios`)
 
@@ -39,10 +39,13 @@ module.exports = {
         console.log({ newMech_id: id })
 
         let allItems = await db.info.getItems()
+        console.log(allItems)
 
         for (let i = 0; i < items.length; i++) {
-            let itemExists = allItems.some(val => val['item'] = items[i])
+            console.log(items[i])
+            let itemExists = allItems.some(val => val === items[i])
             if (itemExists) {
+                console.log('itemexists')
                 let list = await db.info.getMechList(items[i])
                 console.log(list)
                 if (list.length !== 0) {
@@ -52,6 +55,7 @@ module.exports = {
                 let update1 = await db.info.approval.updateMechList([list, items[i]])
             }
             else {
+                console.log('item does not exist')
                 let arr = [id]
                 let addItem = await db.info.approval.addItemAndMech([items[i], arr])
             }

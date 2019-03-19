@@ -87,6 +87,7 @@ class UserDashboard extends Component {
             email: '',
             update: false
         })
+        
         try {
             const updatedAccount = { name, address, number, username, email, id }
             const updator = await axios.put(`/api/updateAccount`, updatedAccount)

@@ -1,6 +1,4 @@
-const initialState = {
-
-};
+const initialState = {};
 
 const UPDATE_USER = "UPDATE_USER";
 const CLEAR_USER = "CLEAR_USER";
