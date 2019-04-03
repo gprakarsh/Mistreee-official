@@ -102,10 +102,6 @@ app.put(`/api/updateAccount`, ic.updateAccount)
 app.get(`/api/stats/donut`, ic.getUserCount)
 app.get(`/api/stats/line`, ic.getLoginsCount)
 
-app.get(`/api/ifixit`, async (req, res) => {
-  const response = await axios.get(`https://www.ifixit.com/api/2.0/guides/1`)
-  res.send(response.data)
-})
 
 //just a simple get endpoint, make sure it matches what you have on your front end. We'll write out the function here instead of putting it inside of a controller. 
 app.get('/sign-s3', (req, res) => {
